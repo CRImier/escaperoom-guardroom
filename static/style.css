@@ -1,0 +1,145 @@
+html {
+    display: block;
+    
+}
+
+body {
+    color: white;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-family: "FreeMono", Monaco, monospace;
+    font-weight: bold;
+}
+
+#access {
+    display: none;
+    font-size: 36px;
+    color: #F00;
+    float: right;
+    margin: auto;
+    width: 200px;
+}
+
+#access p {
+    margin: 0px;
+}
+
+#cam_image {
+    width: 90%;
+    height: auto;
+}
+
+#password_button {
+    background-color: #000;
+    color: #FFF;
+}
+
+#password_block {
+    display: block;
+}
+
+#security_console {
+    display: none;
+    color: #0F0;
+    line-height: 75px;
+    font-size: 36px;
+}
+
+.lock_container {
+    float:left;
+    margin: 5%;
+    display:block;
+    justify-content: center;
+    align-items:center;
+    width: 90%;
+    vertical-align: middle;
+    overflow: visible;
+}
+
+.lock_wrapper {
+    color: #FFF;
+    margin-top: 20px;
+    padding: 0 10% 0 10%;
+    vertical-align: middle;
+    justify-content: left;
+    text-align: left;
+    height: 70px;
+    width: 80%;
+}
+
+.lock_wrapper div {
+    float: right;
+    color: #0F0;
+}
+
+#info_block {
+	color: #FFF;
+	top: 38%;
+	left: 38%;
+	display: block;
+	background-color: #000;
+	font-size: 24px;
+	width: 200px;
+	height: 100px;
+	z-index: 9999;
+	position: absolute;
+	outline: 3px solid #0F0;
+	box-shadow:0px 0px 25px #CFC;
+    overflow: hidden;
+    word-wrap: break-word;
+    padding: 50px;
+}
+
+#info_block div {
+    float: right;
+	vertical-align: middle;
+    word-wrap: break-word;
+    overflow: hidden;
+}
+
+#info_block input {
+    margin: 18px 0 13px 0;
+}
+
+#info_block p {
+    margin: 0px;
+}
+
+.matrix {
+    background-color: #000;
+    color: #0f0;
+    font-size: 18px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.matrix span {
+    display: inline-block;
+    position: relative;
+    width: 1.6rem;
+    word-wrap: break-word;
+}
+
+.matrix .one {
+    margin: 5px;
+    animation: spin 16s infinite linear;
+}
+
+.matrix .two {
+    animation: spin 20s infinite linear;
+}
+
+.matrix .three {
+    animation: spin 13s infinite linear;
+}
+
+.matrix .four {
+    animation: spin 18.25s infinite linear;
+}
+
+@-moz-keyframes spin {
+    0% { bottom: 100%; }
+    100% { bottom: 0; } 
+}
