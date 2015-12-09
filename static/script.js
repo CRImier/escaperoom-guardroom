@@ -1,4 +1,4 @@
-var source = new EventSource("http://192.168.1.107:7080/stream");
+var source = new EventSource("/stream");
 //source.onmessage = function(event) {
 //    console.log(event.data);
 //    //display lock status according to event.data
