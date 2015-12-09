@@ -5,9 +5,9 @@ var source = new EventSource("http://192.168.1.107:7080/stream");
 //    //document.getElementById("result").innerHTML += event.data + "<br>";
 //};
 
-source.addEventListener('open', function(e) {
+source.addEventListener('message', function(e) {
   console.log(e.data);
-}, false);
+}, true);
 
 function resetLogin() {
     "use strict";
