@@ -1,3 +1,4 @@
+window.alert("!");
 var source = new EventSource("http://192.168.1.107:7080/stream");
 source.onmessage = function(event) {
     window.alert("Ololo");
