@@ -1,11 +1,13 @@
-window.alert("!");
 var source = new EventSource("http://192.168.1.107:7080/stream");
-source.onmessage = function(event) {
-    window.alert("Ololo");
-    window.alert(event.data);
-    //display lock status according to event.data
-    //document.getElementById("result").innerHTML += event.data + "<br>";
-};
+//source.onmessage = function(event) {
+//    console.log(event.data);
+//    //display lock status according to event.data
+//    //document.getElementById("result").innerHTML += event.data + "<br>";
+//};
+
+source.addEventListener('message', function(e) {
+  console.log(e.data);
+}, false);
 
 function resetLogin() {
     "use strict";
