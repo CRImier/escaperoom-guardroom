@@ -7,7 +7,7 @@ var source = new EventSource("http://192.168.1.107:7080/stream");
 
 source.addEventListener('message', function(e) {
   console.log(e.data);
-}, true);
+}, false);
 
 function resetLogin() {
     "use strict";
