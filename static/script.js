@@ -1,13 +1,13 @@
-var source = new EventSource("/stream");
+//var source = new EventSource("/stream");
 //source.onmessage = function(event) {
 //    console.log(event.data);
 //    //display lock status according to event.data
 //    //document.getElementById("result").innerHTML += event.data + "<br>";
 //};
 
-source.addEventListener('message', function(e) {
-  console.log(e.data);
-}, false);
+//source.addEventListener('message', function(e) {
+//  console.log(e.data);
+//}, false);
 
 function resetLogin() {
     "use strict";
@@ -41,5 +41,26 @@ function checkSubmit(e) {
     "use strict";
     if (e && e.keyCode === 13) {
         checkPassword();
+    }
+}
+
+
+function changeLockState(id, state) {
+    "use strict"
+    var lockElement;
+    if (id == 1) {
+        lockElement = document.getElementById('lock_1');
+    } else if (id == 2) {
+        lockElement = document.getElementById('lock_2');
+    } else if (id == 3) {
+        lockElement = document.getElementById('lock_3');
+    }
+
+    if (state == 0) {
+        lockElement.textContent = "OFF";
+        lockElement.style.color = "#F00";
+    } else if (state == 1){
+        lockElement.textContent = "ON";
+        lockElement.style.color = "#0F0";
     }
 }
